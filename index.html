@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <h1>Smart Resume Builder</h1>
+    <p>Fill the form below to generate your resume</p>
+
+    <div class="box">
+        <input type="text" id="name" placeholder="Full Name"><br><br>
+        <input type="text" id="skills" placeholder="Skills (comma separated)"><br><br>
+        <textarea id="experience" placeholder="Experience"></textarea><br><br>
+        <button onclick="generateResume()">Generate Resume</button>
+    </div>
+
+    <div id="preview"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
